@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+a {
+    color: #3CB371;
+}
+
+a:link,
+a:hover {
+    text-decoration: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    background: transparent;
+    color: #3CB371;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    background: silver;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.section {
+    padding: 85px 0 100px;
+}
+
+.section-with-buy-box {
+    padding-bottom: 80px;
+}
+
+#to-top {
+    background: #3CB371;
+    bottom: 80px;
+    height: 40px;
+    opacity: .5;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    transition: all .3s 0s;
+    -webkit-transition: all .3s 0s;
+    -moz-transition: all .3s 0s;
+    -ms-transition: all .3s 0s;
+    -o-transition: all .3s 0s;
+    width: 40px;
+    z-index: 500;
+}
+
+#to-top i {
+    margin-top: 4px;
+}
+
+#to-top:hover {
+    opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    #to-top {
+        bottom: 40px;
+        right: 20px;
+    }
+}
+
+
+/* Footer */
+
+.contact table {
+    margin-top: 15px;
+    min-height: 130px;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer {
+    background: black;
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #3CB371;
+}
+
+.copyright {
+    display: flex;
+    color: silver;
+    padding-bottom: 15px;
+}
+
+.copyright-space {
+    flex: 1;
+}
+
+.smsticket-info {
+    text-align: right;
+}
+
+.smsticket-info img {
+    float: right;
+}
+
+.socials a {
+    margin: 0 2.5px;
+}
+
+.important-links {
+    padding-top: 25px;
+    text-align: left;
+}
+
+.important-links li {
+    list-style: none;
+}
+
+.important-links li a {
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    .copyright {
+        display: inline-block;
+    }
+    .copyright-space {
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Header */
+
+header {
+    background: #3CB371;
+    z-index: 900;
+}
+
+#menu-navbar {
+    position: relative;
+}
+
+.meni-list {
+    max-width: 500px;
+}
+
+#menu a:link {
+    color: white;
+    font-size: 17px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 141.8px;
+}
+
+@media (max-width: 575.98px) {
+    .sticky+.content {
+        padding-top: 132.6px;
+    }
+}
+
+
+/* Iframe */
+
+.iframe-lightbox .content-holder {
+    max-width: 906px;
+    height: 95%;
+}
+
+.iframe-lightbox .content {
+    height: 100%!important;
+    padding-bottom: 0!important;
+}
+
+
+/* Localizace */
+
+#mapa {
+    width: 100%;
+}
+
+#misto {
+    background: rgba(60, 179, 113, .1);
+    padding-bottom: 85px;
+}
+
+#misto h2 {
+    margin-top: .3em;
+}
+
+#misto .map {
+    margin-bottom: 25px;
+}
+
+#misto .text {
+    padding-left: 50px;
+    text-align: left;
+}
+
+#misto ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+#misto ul li {
+    color: #5d5e5a;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+    #misto .text {
+        padding-left: 15px;
+        text-align: left;
+    }
+}
+
+
+/* Page section */
+
+.description {
+    color: #5d5e5a;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.my-btn {
+    background: #3CB371;
+    border: 1px solid #3CB371;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+}
+
+.my-btn a:link {
+    color: white;
+}
+
+.my-btn:hover {
+    background: transparent;
+}
+
+.my-btn:hover {
+    color: #3CB371;
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        font-size: 1.1em;
+    }
+    .my-btn {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 12px 27px;
+    }
+}
+
+
+/* Program */
+
+#program {
+    background: rgba(60, 179, 113, .1);
+}
+
+#program .container {
+    max-width: 46em;
+}
+
+.program-box {
+    background: white;
+    margin: 1.5em 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.program-row {
+    display: flex;
+}
+
+.program-time img {
+    border-radius: 50%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    margin-top: -15%;
+    width: 100%;
+}
+
+.program-box div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.program-time {
+    flex: 1;
+    font-size: 1.75em;
+    line-height: 1.2;
+    color: grey;
+    margin-bottom: 24px;
+    max-width: 25%;
+    text-align: right;
+}
+
+.program-text {
+    flex: 3;
+    max-width: 75%;
+    text-align: left;
+}
+
+.program-text h3 {
+    margin-bottom: 14px;
+}
+
+.program-text p {
+    color: #5d5e5a;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 575.98px) {
+    .program-text h3 {
+        font-size: 20px;
+    }
+    .program-time {
+        font-size: 1.35em;
+    }
+    .program-time.image {
+        padding: 0;
+    }
+    .program-time img {
+        max-width: 80px;
+    }
+}
+
+
+/* Sponzoring */
+
+.left-item {
+    margin-right: 35px;
+}
+
+#sponzoring .buy-box {
+    justify-content: center;
+}
+
+#sponzoring .buy-package {
+    width: 40%;
+}
+
+#sponzoring .package-description ul {
+    min-height: 260px;
+}
+
+#sponzoring img {
+    margin-bottom: 40px;
+    border: 1px solid #e9e9e9;
+}
+
+.sponzors-list {
+    margin-top: 40px;
+}
+
+@media (max-width: 1199.98px) {
+    #sponzoring .package-description ul {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #sponzoring .buy-package {
+        width: 48%;
+    }
+    #sponzoring .package-description ul {
+        min-height: 415px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #sponzoring .buy-package {
+        width: 65%;
+    }
+    #sponzoring img {
+         margin-bottom: 20px;
+     }
+    #sponzoring .package-description ul {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #sponzoring .buy-package {
+        width: 95%;
+        max-width: 300px;
+    }
+}
+
+
+
+#sponzoring .video-space {
+    display: inline-block;
+    max-width: 700px;
+    width: 100%;
+}
+
+
+/* Ticket */
+
+.buy-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buy-package {
+    border: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 47px 15px 93px;
+    position: relative;
+    width: 31%;
+    background: white;
+}
+
+.buy-package h6 {
+    color: #3CB371;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.package-price {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.package-description {
+    padding: 23px 0 17px;
+}
+
+.package-description ul {
+    margin-bottom: 10px;
+    padding-inline-start: 60px;
+    text-align: left;
+    min-height: 130px;
+}
+
+.package-description ul li {
+    color: #51545b;
+    font-size: 100%;
+    line-height: 29px;
+    margin-bottom: 7px;
+}
+
+.sale-label {
+    background: #3CB371;
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    left: -36px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 28px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    width: 150px;
+}
+
+.sold-out {
+    opacity: 0.5;
+}
+
+#vstupenky .buy-package .my-btn {
+    bottom: 43px;
+    left: 30%;
+    position: absolute;
+}
+
+@media (max-width: 1199.98px) {
+    .package-description ul {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .buy-box {
+        justify-content: space-around;
+    }
+    .buy-package {
+        width: 48%;
+    }
+    .left-item {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .buy-box {
+        justify-content: center;
+    }
+    .buy-package {
+        width: 65%;
+    }
+    .left-item {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .buy-package {
+        width: 95%;
+        max-width: 300px;
+    }
+}
+
+
+/*Welcome section*/
+
+#header-title {
+    flex: 1;
+}
+
+#menu .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#menu .nav-link:hover {
+    color: rgba(255, 255, 255, .5);
+}
+
+#menu-navbar {
+    display: flex;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    background: #3CB371;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    opacity: .6;
+    z-index: -1;
+}
+
+#welcome {
+    background-image: url(./img/brno-3430036.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 1;
+}
+
+#welcome .text {
+    color: white;
+    text-align: center;
+    padding: 205px 0;
+}
+
+#welcome .text .event-date {
+    font-size: 50px;
+}
+
+#welcome .text .brand {
+    font-size: 130px;
+    margin: 0 0 8px;
+}
+
+#welcome .text .event {
+    font-size: 40px;
+}
+
+@media (max-width: 767.98px) {
+    #welcome .text .brand {
+        font-size: 80px;
+    }
+    #welcome .text .event-date {
+        font-size: 30px;
+    }
+    #welcome .text .event {
+        font-size: 20px;
+    }
+    #welcome .text {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #welcome .text .brand {
+        font-size: 40px;
+    }
+    #welcome .text .event-date {
+        font-size: 20px;
+    }
+    #welcome .text .event {
+        font-size: 25px;
+    }
+    #welcome .text {
+        padding: 60px 0;
+    }
+    #menu a:link {
+        font-size: 15px;
+    }
+    .navbar-toggler {
+        font-size: .9rem;
+    }
+}
