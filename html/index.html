@@ -1,103 +1,471 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Science - Your partner in technology</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8CGC4CB51"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y8CGC4CB51');
+    </script>
+
+    <meta name="description" content="Web Science je konference pro webové vědce v Brně. Přijďte si poslechnout jak se dělají weby v 21. století">
+    <meta name="keywords" content="konference, prednasky, vzdelavani, workshopy">
+
+    <meta name="og:title" content="Web Science Konference / 28. 5. 2025 / Brno">
+    <meta name="og:description" content="Web Science je konference pro webové vědce v Brně. Přijďte si poslechnout jak se dělají weby v 21. století">
+    <meta name="og:image" content="https://www.webscience.cz/konference/img/konference_info.png">
+
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>
+        Loader.load()
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@0.2.8/css/iframe-lightbox.min.css">
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Web Science Konference / 28. 5. 2025 / Brno</title>
 </head>
-<body class="font-sans antialiased text-gray-900">
 
-  <!-- Menu -->
-  <nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="text-white text-lg font-bold">
-        <a href="/"><img src="asssets/img/WebS_bez_bila.png" alt="Logo" class="h-8"></a> 
-      </div>
-      <div class="space-x-4">
-        <a href="#home" class="text-gray-300 hover:text-white">Domů</a>
-        <a href="#services" class="text-gray-300 hover:text-white">Co děláme</a>
-        <a href="#about" class="text-gray-300 hover:text-white">O nás</a>
-        <a href="#contact" class="text-gray-300 hover:text-white">Kontakt</a>
-      </div>
-    </div>
-  </nav>
+<body>
+    <a href="#" id="to-top" class="hidden"><i class="fa fa-angle-up" style="font-size: 28px;color: white;"></i></a>
 
-  <!-- Úvodní Baner -->
-  <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('./asssets/img/cameras.jpg');">
-    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
-      <div class="text-center text-white">
-        <h1 class="text-4xl font-bold mb-4">Vítejte ve Web Science</h1>
-        <p class="text-lg">Poskytujeme služby v oblasti zabezpečení, řízení a monitoringu</p>
-      </div>
-    </div>
-  </section>
+    <section id="welcome" class="overlay" style="padding-top:0;padding-bottom:0;">
+        <div class="text">
+            <h5 class="event-date">28. 5. 2025 / Brno</h5>
+            <h1 class="brand">Web Science</h1>
+            <h6 class="event">Konference pro webové vědce</h6>
+        </div>
+    </section>
 
-  <!-- Co děláme -->
-  <section id="services" class="py-12 bg-gray-100">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">Co děláme</h2>
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white p-6 shadow-md rounded-lg">
-              <h3 class="text-xl font-bold mb-4">Elektronické zabezpečovací systémy (EZS)</h3>
-              <p>Naše firma je certifikovaným montážním partnerem společnosti Jablotron, která je lídrem v oblasti elektronických zabezpečovacích systémů. Nabízíme komplexní řešení zabezpečení pro domácnosti, firmy i průmyslové objekty.</p>
-              <p class="mt-4">Pokud hledáte spolehlivé zabezpečení pro svůj majetek, obraťte se na nás a my vám pomůžeme najít to nejlepší řešení na míru.</p>
+    <header id="menu-space">
+        <div class="container">
+            <nav id="menu-navbar" class="navbar navbar-expand-md navbar-dark">
+                <div id="header-title" class="navbar-brand"></div>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <ul id="menu" class="navbar-nav menu-smaller">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#CFP">CFP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vstupenky">Podpořte nás</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#misto">Místo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sponzoring">Sponzoring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="CFP" class="section content">
+        <div class="container center">
+            <h2>Call for papers</h2>
+            <p class="description">Poděl se s námi o tvé zkušenosti, pověz nám o nových technologiích, o nástrojích které dobře slouží při vývoji webů nebo o inovativních přístupech v programování. Protože to je co každý webový věděc chce slyšet! Získej zkušenost s přednášením,
+                vzdělej nás, příhlaš svou přednášku.</p>
+            <a class="my-btn" href="https://www.papercall.io/cfps/2920/submissions/new" target="_blank">Přihlásit přednášku</a>
+        </div>
+    </section>
+
+    <section id="program" class="section">
+        <div class="container center">
+            <h2>Program</h2>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>9:00</span>
+                    <img src="img/vasek.jpg">
+                </div>
+                <div class="program-text">
+                    <h3 class="program-name">Úvodní slovo</h3>
+                    <p class="program-description">Zahájení konference, organizační informace a první soutěž.</p>
+                    <hr>
+                    <b>Václav Čevela</b>
+                    <p>Vašek tvoří roky eshopy, školí elasticsearch, organizuje meetupy a konference v Brně. A když náhodou má čas tak do 4 do rána hraje factorio.</p>
+                </div>
             </div>
-          </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>10:00</span>
+                    <img src="img/favicon.png">
+                </div>
 
-          <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white p-6 shadow-md rounded-lg">
-              <h3 class="text-xl font-bold mb-4">Měření a regulace (MaR)</h3>
-              <p>Specializujeme se na měření a regulaci (MaR) se zaměřením na řízení systémů a přenos telemetrických dat. Nabízíme moderní řešení, která zajišťují efektivní a spolehlivý provoz vašich technologií.</p>
-              <p class="mt-4">Každý projekt přizpůsobujeme individuálním potřebám zákazníka, aby výsledné řešení přesně odpovídalo vašim požadavkům. Poskytujeme komplexní služby zahrnující návrh, implementaci a následný servis, abychom zajistili bezproblémový provoz vašich systémů.</p>
+                <div class="program-text">
+                    <h3 class="program-name">Slot 1</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
             </div>
-          </div>
-          <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white p-6 shadow-md rounded-lg">
-              <h3 class="text-xl font-bold mb-4">Kamerové systémy a datové rozvody</h3>
-              <p>Nabízíme komplexní řešení v oblasti datových rozvodů a kamerových systémů. Zajišťujeme návrh, instalaci a údržbu infrastruktury, která umožňuje efektivní a bezpečné přenosy dat a spolehlivé monitorování prostor.</p>
-              <p class="mt-4">Ať už potřebujete robustní datovou infrastrukturu nebo spolehlivý kamerový systém, náš individuální přístup a odborné znalosti vám pomohou dosáhnout nejlepších výsledků.</p>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>11:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Slot 2</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
             </div>
-          </div>
-          
-      </div>
-    </div>
-  </section>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>12:00</span>
+                    <img src="img/favicon.png">
+                </div>
 
-<!-- O nás -->
-<section id="about" class="py-12">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">O nás</h2>
-      <p class="text-center max-w-2xl mx-auto">Naše firma, založená v roce 2020, se zaměřuje na poskytování služeb ve Středočeském kraji. Od počátku našeho působení jsme se soustředili na osobní přístup a individuální řešení každé zakázky. Věříme, že každý projekt je jedinečný, a proto přistupujeme k našim klientům s maximální péčí a pozorností.</p>
-      <p class="text-center max-w-2xl mx-auto mt-4">Spolupracujeme s profesionály v různých oborech, jako je projektování či elektrotechnika, abychom zajistili komplexní a kvalitní služby. Naše partnerství s odborníky nám umožňuje realizovat projekty na nejvyšší úrovni a splnit očekávání i těch nejnáročnějších zákazníků.</p>
-      <p class="text-center max-w-2xl mx-auto mt-4">Pro naše řešení využíváme zařízení od renomovaných dodavatelů, jako jsou Schneider Eletrics, Hikvision, Teltonika a Mikrotik. Díky těmto špičkovým produktům můžeme zaručit spolehlivost, bezpečnost a dlouhou životnost našich instalací. Naše firma je synonymem pro kvalitu a profesionální přístup, který ocení každý náš zákazník.</p>
-    </div>
-  </section>
+                <div class="program-text">
+                    <h3 class="program-name">Slot 3</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
 
-   <!-- Kontakt -->
-   <section id="contact" class="py-12 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Kontakt</h2>
-      <div class="max-w-lg mx-auto">
-        <p class="mb-4">Web Science, s.r.o.</p>
-        <p class="mb-4">Nové sady 988/2</p>
-        <p class="mb-4">602 00 Brno</p>
-        <p class="mb-4">IČO: 08899541</p>
-        <p class="mb-4">Email: <a href="mailto:info@webscience.cz" class="text-indigo-600 hover:underline">info@webscience.cz</a></p>
-        <p>Tel: <a href="tel:+420733348366" class="text-indigo-600 hover:underline">+420 733 348 366</a></p>
-      </div>
-    </div>
-  </section>
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>13:00</span>
+                    <img src="img/favicon.png">
+                </div>
 
-<!-- Patička -->
-<footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p class="text-sm">© 2024 Web Science, s.r.o. Všechna práva vyhrazena.</p>
-      <span class="text-sm">Foto: <a href="https://unsplash.com/" target="_blank">unsplash.com</a></span>
-      
-    </div>
-  </footer>
+                <div class="program-text">
+                    <h3 class="program-name">Slot 4</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>14:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Slot 5</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>15:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Slot 6</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>16:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Slot 7</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>17:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Slot 8</h3>
+                    <p class="program-description">TBA</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>18:00</span>
+                    <img src="img/vasek.jpg">
+                </div>
+                <div class="program-text">
+                    <h3 class="program-name">Závěrečné slovo</h3>
+                    <p class="program-description">Ukončení konference, organizační informace a soutěž od hlavního sponzora.</p>
+                    <hr>
+                    <b>Václav Čevela</b>
+                    <p>Vašek tvoří roky eshopy, školí elasticsearch, organizuje meetupy a konference v Brně. A když náhodou má čas tak do 4 do rána hraje factorio.</p>
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>19:00</span>
+                    <img src="img/favicon.png">
+                </div>
+
+                <div class="program-text">
+                    <h3 class="program-name">Afterparty</h3>
+                    <p class="program-description">V prostorech konference budeme pokračovat v afterparty</p>
+                    <hr>
+                    <b>Webscientist</b>
+                    <p>Hello!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vstupenky" class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Vstupenky</h2>
+            <br>
+            <br>
+            <div class="buy-box">
+                <div class="buy-package sold-out">
+                    <h6>Regular</h6>
+                    <div class="package-price">
+                        <span>5 500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>V prodeji po zveřejnění programu</li>
+                            <li>Triko webového vědce</li>
+                            <li>Káva a občerstvení během konference</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn disabled iframe-lightbox-link" data-srolling="true">Koupit</a>
+                </div>
+                <div class="buy-package">
+                    <span class="sale-label">V prodeji</span>
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>3 590 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Buďte mezi prvními</li>
+                            <li>Triko webového vědce</li>
+                            <li>Káva a občerstvení během konference</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.smsticket.cz/api/widgets/event-sale/v2/cs/20619?eventInfo=false" class="my-btn iframe-lightbox-link" data-scrolling="true">Koupit</a>
+                </div>
+                <div class="buy-package sold-out">
+                    <h6>Late</h6>
+                    <div class="package-price">
+                        <span>7 800 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na poslední chvíli</li>
+                            <li>Triko webového vědce</li>
+                            <li>Káva a občerstvení během konference</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn disabled iframe-lightbox-link" data-srolling="true">Koupit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="misto" class="section">
+        <div class="container center">
+            <h2>Jak se k nám dostanete</h2>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 map">
+                    <div id="mapa" style="height:300px;"></div>
+                </div>
+                <div class="col-md-6 text">
+                    <ul>
+                        <li><i class="fa fa-bus"></i> šalinó 12 až na zastávku Skácelova a 800 metrů přímo ke KD Rubín [<a href="https://mapy.cz/s/novafonuru" data-padding-bottom="96%" class="iframe-lightbox-link">trasa</a>]</li>
+                        <li><i class="fa fa-train"></i> z hlavního vlakového nádraží šalinó 12 na zástavku Česká, přestoupit na trolejbus 36 a vystoupit na Makovského náměstí. [<a href="https://mapy.cz/s/cutavejupu" data-padding-bottom="96%" class="iframe-lightbox-link">trasa</a>]</li>
+                        <li><i class="fa fa-car"></i> lze parkovat v okolí KD Rubín, v ulici Poznaňská, nebo na parkovišti Záhřebská.</li>
+                        <li><i class="fa fa-plane"></i> na BRQ a poté autobusem 78 na hlavní nádraží a pokračovat podle MHD trasy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponzoring" class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Partneři konference</h2>
+            <div class="row sponzors-list">
+                <div class="col-md-4">
+                    <a href="#/" target="_blank">
+                        <img src="img/partners/diamond.png" width="300">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.skoleninasbavi.cz/" target="_blank">
+                        <img src="img/partners/skoleni.svg" width="300">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="img/partners/diamond.png" width="300">
+                    </a>
+                </div>
+            </div>
+            <div class="row sponzors-list">
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="img/partners/gold.png" width="300">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="img/partners/gold.png" width="300">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" target="_blank">
+                        <img src="img/partners/gold.png" width="300">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="be-sponzor" class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Staňte se partnerem konference</h2>
+            <p class="description">Jako partneři získáte:</p>
+            <div class="row sponzors-list">
+                <div class="col-md-6">
+                    <h6>Gold</h6>
+                    <div class="package-price">
+                        <span>20 000 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>2 vstupenky na konferenci</li>
+                            <li>Umístění rollupu v prostorách konference</li>
+                            <li>Logo na stránkách konference</li>
+                            <li>Logo na konci videozáznamů přednášek</li>
+                            <li>Vytištěné logo na programu</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:info@webscience.cz?subject=Konference - Gold partner" class="my-btn">STÁT SE PARTNEREM</a>
+                </div>
+                <div class="col-md-6">
+                    <h6>Diamond</h6>
+                    <div class="package-price">
+                        <span>40 000 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>4 vstupenky na konferenci</li>
+                            <li>Umístění rollupu na podiu</li>
+                            <li>Logo na stránkách konference</li>
+                            <li>Logo v úvodu videozáznamů přednášek</li>
+                            <li>Výstavní stánek - prostor pro prezentování sponzora</li>
+                            <li>Logo v prostorech prezence účastníků</li>
+                            <li>Sponzor soutěže</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:info@webscience.cz?subject=Konference - Diamond partner" class="my-btn">STÁT SE PARTNEREM</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer row">
+                <div class="socials col-md-4 center">
+                    <a href="https://www.facebook.com/websciencecz/" target="_blank"><i class="fa fa-facebook" style="font-size:30px;color:white"></i></a>
+                    <a href="https://twitter.com/web_science_cz" target="_blank"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a>
+
+                    <ul class="important-links">
+                        <li><a href="https://www.webscience.cz/docs/obchodni_podminky.pdf" target="_blank">Obchodní podmínky</a></li>
+                        <li><a href="https://www.smsticket.cz/obchodni-podminky" target="_blank">Obchodní podmínky (SMSTicket)</a></li>
+                        <li><a href="https://www.webscience.cz/docs/coc.pdf" target="_blank">Conference Code of Conduct</a></li>
+                    </ul>
+                </div>
+
+                <div class="labels col-md-4 center"></div>
+                <div id="kontakt" class="contact col-md-4">
+                    <span class="contact-title">Kontakt</span>
+                    <div class="contact-brand">Sponzoring a organizaci řeší Vašek, na kontaktech níže nebo na obvyklých místech na internetech.</div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>E-Mail: <a href="mailto:info@spameri.cz">info@spameri.cz</a></td>
+                        </tr>
+                        <tr>
+                            <td>Tel.: <a href="tel:+420603941849">+420 603 941 849</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div class="copyright">
+                <div class="copyright-space">
+                    <span>Created by web scientists for web scientists</span>
+                </div>
+                <div class="smsticket-info">
+                    <span>Prodej vstupenek zajišťuje&nbsp;</span>
+                    <a href="https://www.smsticket.cz/" target="_blank">
+                        <img src="https://www.skoleninasbavi.cz/img/smsticket-logo-white.png" height="17">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@0.2.8/js/iframe-lightbox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
