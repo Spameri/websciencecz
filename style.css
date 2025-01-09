@@ -212,8 +212,13 @@ header {
 
 /* Localizace */
 
-#mapa {
-    width: 100%;
+.map {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-image: url('img/mapa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #misto {
@@ -319,13 +324,21 @@ header {
     display: flex;
 }
 
+.program-time img.speaker {
+    border-radius: 50%;
+}
+
 .program-time img {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
     margin-top: 100%;
+}
+
+.program-box hr
+{
+    margin-top: 100px;
 }
 
 .program-box div {
@@ -585,6 +598,8 @@ header {
 #menu .nav-link {
     font-size: 16px;
     text-transform: uppercase;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 #menu .nav-link:hover {
