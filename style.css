@@ -222,7 +222,6 @@ header {
 }
 
 #misto {
-    background: rgba(60, 179, 113, .1);
     padding-bottom: 85px;
 }
 
@@ -306,7 +305,6 @@ header {
 /* Program */
 
 #program {
-    background: rgba(60, 179, 113, .1);
 }
 
 #program .container {
@@ -694,6 +692,8 @@ header {
 
 /* Sponzoring */
 
-#sponzoring {
+
+.section-with-background
+{
     background: rgba(60, 179, 113, .1);
 }
