@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@0.2.8/css/iframe-lightbox.min.css">
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=6">
     <link rel="icon" href="img/favicon.png">
 
     <title>Web Science Konference / 10. 6. 2025 / Brno</title>
@@ -62,9 +62,6 @@
                 <div class="collapse navbar-collapse" id="collapse_target">
                     <ul id="menu" class="navbar-nav menu-smaller">
                         <li class="nav-item">
-                            <a class="nav-link" href="#CFP">CFP</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#program">Program</a>
                         </li>
                         <li class="nav-item">
@@ -88,25 +85,13 @@
         </div>
     </header>
 
-    <section id="CFP" class="section content">
-        <div class="container center">
-            <h2>Call for papers</h2>
-            <p class="description">
-                Poděl se s námi o tvé zkušenosti, pověz nám o nových technologiích, o nástrojích které
-                dobře slouží při vývoji webů nebo o inovativních přístupech v programování. Protože to je co každý
-                webový věděc chce slyšet! Získej zkušenost s přednášením, vzdělej nás, příhlaš svou přednášku.
-            </p>
-            <a class="my-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSecJDbfc_HJD-PMjJyzlq-SXnZ6aQ4KygdCxCxRt4e-LZZysw/viewform?usp=header" target="_blank">Přihlásit přednášku</a>
-        </div>
-    </section>
-
     <section id="program" class="section section-with-background">
         <div class="container center">
             <h2>Program</h2>
             <div class="program-box">
                 <div class="program-time">
                     <span>9:30</span>
-                    <img class="speaker" src="img/vasek.jpg">
+                    <img class="speaker" src="img/speaker/vasek.jpg">
                 </div>
                 <div class="program-text">
                     <h3 class="program-name">Úvodní slovo</h3>
@@ -129,12 +114,12 @@
             </div>
             <div class="program-box">
                 <div class="program-time">
-                    <span>18:00</span>
-                    <img class="speaker" src="img/vasek.jpg">
+                    <span>19:00</span>
+                    <img class="speaker" src="img/speaker/vasek.jpg">
                 </div>
                 <div class="program-text">
                     <h3 class="program-name">Závěrečné slovo</h3>
-                    <p class="program-description">Ukončení konference, organizační informace a soutěž od hlavního sponzora.</p>
+                    <p class="program-description">Ukončení konference, organizační informace a soutěž.</p>
                     <hr>
                     <b>Václav Čevela</b>
                     <p>Vašek tvoří roky eshopy, školí elasticsearch, organizuje meetupy a konference v Brně. A když náhodou má čas tak do 4 do rána hraje factorio.</p>
@@ -142,13 +127,13 @@
             </div>
             <div class="program-box">
                 <div class="program-time">
-                    <span>19:00</span>
+                    <span>19:30</span>
                     <img src="img/beer.png">
                 </div>
 
                 <div class="program-text">
                     <h3 class="program-name">Afterparty</h3>
-                    <p class="program-description">V prostorech konference bude začne afterparty.</p>
+                    <p class="program-description">V prostorech konference vypukne afterparty.</p>
                     <hr>
                     <b>Webscientist</b>
                     <p>Hello!</p>
@@ -164,9 +149,9 @@
             <br>
             <div class="buy-box">
                 <div class="buy-package sold-out">
-                    <h6>Regular</h6>
+                    <h6>Blind</h6>
                     <div class="package-price">
-                        <span>4 600 Kč</span>
+                        <span>---</span>
                     </div>
                     <div class="package-description">
                         <ul>
@@ -179,7 +164,7 @@
                 </div>
                 <div class="buy-package">
                     <span class="sale-label">V prodeji</span>
-                    <h6>Blind</h6>
+                    <h6>Regular</h6>
                     <div class="package-price">
                         <span>3 400 Kč</span>
                     </div>
@@ -195,10 +180,11 @@
                 <div class="buy-package sold-out">
                     <h6>Late</h6>
                     <div class="package-price">
-                        <span>5 800 Kč</span>
+                        <span>4 600 Kč</span>
                     </div>
                     <div class="package-description">
                         <ul>
+                            <li>Od 26.5. 2025</li>
                             <li>Vstup na poslední chvíli</li>
                             <li>Triko webového vědce</li>
                             <li>Káva a občerstvení během konference</li>
@@ -207,6 +193,7 @@
                     <a href="#" class="my-btn disabled" data-srolling="true">Koupit</a>
                 </div>
             </div>
+            Pro skupinové vstupenky a vystavení faktury nás kontaktujte na <a href="mailto:info@webscience.cz>">mailu.</a>
         </div>
     </section>
 
@@ -242,46 +229,60 @@
 
     <section id="sponzoring" class="section section-with-buy-box">
         <div class="container center">
-            <h2>Partneři konference</h2>
+            <h2>Partneři</h2>
             <div class="row sponzors-list">
                 <div class="col-md-4">
-                    <a href="#/" target="_blank">
-                        <img src="img/hands.png" width="100">
-                    </a>
-                    <br />
-                    Hledáme partnery
-                </div>
-                <div class="col-md-4">
                     <a href="https://www.skoleninasbavi.cz/" target="_blank">
-                        <img src="img/partners/skoleni.svg" width="300">
+                        <img src="img/partners/skoleni.svg" width="300" height="150">
                     </a>
+                    Školení nás baví
                 </div>
                 <div class="col-md-4">
-                    <a href="#" target="_blank">
-                        <img src="img/hands.png" width="100">
+                    <a href="https://www.keboola.com/" target="_blank">
+                        <img src="img/partners/Keboola_logo.svg" width="300" height="150">
+                    </a>
+                    Keboola
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.vas-hosting.cz/" target="_blank">
+                        <img src="img/partners/vas-hosting.svg" width="300" height="150">
                     </a>
                     <br />
-                    Hledáme partnery
+                    váš hosting
                 </div>
             </div>
             <div class="row sponzors-list">
                 <div class="col-md-4">
                     <a href="#" target="_blank">
-                        <img src="img/hands.png" width="100">
+                        <img src="img/hands.png" height="150" >
                     </a>
                     <br />
                     Hledáme partnery
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Komunitní partneři</h2>
+            <div class="row sponzors-list">
                 <div class="col-md-4">
-                    <a href="#" target="_blank">
-                        <img src="img/hands.png" width="100">
+                    <a href="https://gug.cz/" target="_blank">
+                        <img src="img/partners/gug.webp" width="200" height="150">
                     </a>
                     <br />
-                    Hledáme partnery
+                    GUG.CZ
+                </div>
+                <div class="col-md-4">
+                    <a href="https://pehapkari.cz/" target="_blank">
+                        <img src="img/partners/pehapkari.svg" width="300" height="150">
+                    </a>
+                    Péhápkaři
                 </div>
                 <div class="col-md-4">
                     <a href="#" target="_blank">
-                        <img src="img/hands.png" width="100">
+                        <img src="img/hands.png" height="150">
                     </a>
                     <br />
                     Hledáme partnery
@@ -370,7 +371,7 @@
                     <table>
                         <tbody>
                         <tr>
-                            <td>E-Mail: <a href="mailto:info@spameri.cz">info@spameri.cz</a></td>
+                            <td>E-Mail: <a href="mailto:info@webscience.cz">info@webscience.cz</a></td>
                         </tr>
                         <tr>
                             <td>Tel.: <a href="tel:+420603941849">+420 603 941 849</a></td>
