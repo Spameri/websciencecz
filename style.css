@@ -339,9 +339,9 @@ code {
 .program-time img {
     width: 120px;
     height: 120px;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    margin-top: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 35px;
 }
 
 .program-box hr
@@ -355,6 +355,7 @@ code {
 }
 
 .program-time {
+    position: relative;
     flex: 1;
     font-size: 1.75em;
     line-height: 1.2;
