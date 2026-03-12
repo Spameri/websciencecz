@@ -84,7 +84,7 @@ The site deploys automatically to GitHub Pages when changes are pushed to the `m
 
 ### Important Notes
 - The deployment workflow references `./html` directory but files are in root - this may need correction
-- CSS is versioned in the HTML (`style.css?v=8`) - increment version when updating styles
+- CSS and JS cache busting is automatic — the deploy workflow replaces `?v=` with an MD5 content hash. No manual version bumps needed.
 - Ticket prices and Stripe links need manual updates each year
 - Conference date appears in multiple places (meta tags, welcome section, title) - update all instances
 
@@ -97,7 +97,7 @@ The site deploys automatically to GitHub Pages when changes are pushed to the `m
 4. Update partner/sponsor logos and links
 5. Move previous year section to link to new YouTube playlist
 6. Update speaker photos in `img/speaker/`
-7. Increment CSS version parameter if styles changed
+7. CSS/JS cache busting is automatic (no action needed)
 
 **Regular updates:**
 - Monitor and update ticket status (sold-out classes)
