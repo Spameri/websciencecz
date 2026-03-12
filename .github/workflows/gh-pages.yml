@@ -11,6 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Cache-bust CSS and JS with content hash
+        run: |
+          CSS_HASH=$(md5sum html/style.css | cut -c1-8)
+          JS_HASH=$(md5sum html/main.js | cut -c1-8)
+          find html -name '*.html' -exec sed -i "s|style\.css?v=[^\"]*|style.css?v=${CSS_HASH}|g" {} +
+          find html -name '*.html' -exec sed -i "s|main\.js|main.js?v=${JS_HASH}|g" {} +
+
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
