@@ -334,6 +334,7 @@ code {
 
 .program-time img.speaker {
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .program-time img {
@@ -379,6 +380,26 @@ code {
     color: #5d5e5a;
     margin-top: 0;
     margin-bottom: 24px;
+}
+
+.program-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.program-highlights li {
+    color: #5d5e5a;
+    padding: 6px 0 6px 24px;
+    position: relative;
+}
+
+.program-highlights li::before {
+    content: ">";
+    color: #3CB371;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
 
 @media (max-width: 575.98px) {
