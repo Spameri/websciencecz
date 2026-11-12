@@ -1,0 +1,37 @@
+# Web Science 2027
+
+> Komunitní single-track konference pro vývojáře, kteří staví software s AI. Brno, květen 2027 (přesný den bude upřesněn), Kulturní dům Rubín. Pořádá Václav Čevela s komunitou Péhápkaři Brno. Zisk není cíl – vstupné a partneři pokrývají sál, jídlo, kávu, afterparty a záznamy.
+
+## Fakta
+- Termín: květen 2027, přesný den bude upřesněn na https://www.webscience.cz
+- Místo: KD Rubín, Makovského náměstí 3166/3, 616 00 Brno-Žabovřesky
+- Formát: jeden den, jeden sál, ~7 přednášek, kvíz o ceny, afterparty; ~150 účastníků
+- Jazyk přednášek: česky, slovensky nebo anglicky
+- Zaměření od 2027: AI vývoj – agenti, LLM v produkci, AI coding tools, testování AI kódu, MCP a integrace, provoz a infra pro AI (ročníky 2020–2026 byly o webovém vývoji; v 2026 bylo 6 ze 7 přednášek o AI)
+
+## Vstupenky
+- Cena: 2 500 Kč, jedna cena po celou dobu prodeje (žádné early bird / late tiery)
+- V ceně: celý program, snídaně, teplý oběd, káva a pití po celý den, makronky, konferenční triko, tištěný program, burgery, pivo a kofola na afterparty, přístup k záznamům
+- Nákup: https://buy.stripe.com/dRmcN48oofragQD8JFgUM05 (karta, Stripe, vstupenka na jméno, faktura při zadání firemních údajů)
+- Firmy / skupinové vstupenky / převod: info@webscience.cz
+
+## Call for Papers
+- Otevřen do 31. 1. 2027, oznámení přijetí do 14. 2. 2027
+- Formulář: https://docs.google.com/forms/d/e/1FAIpQLSdIys_YAHbgYoIsvv6A_k4zuhDhdrhOwP8cbC1KrelcvKx6NA/viewform
+- Formát přednášky: do 20 minut, nebo 20–40 minut + otázky; až tři návrhy
+- Řečníci mají vstup, jídlo a afterparty zdarma a záznam na YouTube
+
+## Partneři
+- Balíček Gold 20 000 Kč: 2 vstupenky, logo na webu / v programu / u záznamů, rollup a stánek, sponzor kvízu
+- Formulář: https://docs.google.com/forms/d/e/1FAIpQLScn_l0kuqSj3A4d-xBy5cH53HOI6S9iSIfmnFir4iHCRrXn-w/viewform
+- Partneři 2026: Školení nás baví, Colectio; komunitní partner Péhápkaři
+
+## Minulé ročníky
+- 2026 (13. 5. 2026): https://www.webscience.cz/2026/ · záznamy https://www.youtube.com/playlist?list=PL94TcIGfubimVaxP4vKUPFRd-Uljqc914
+- 2025 (10. 6. 2025): https://www.webscience.cz/2025/ · záznamy https://www.youtube.com/playlist?list=PL94TcIGfubilkaJkDEwS3Yed3kHyrQ55b
+- 2020: https://www.youtube.com/playlist?list=PL94TcIGfubimtiK-C0ADrUyz3no-bN3_D
+
+## Kontakt
+- info@webscience.cz · +420 603 941 849
+- LinkedIn https://www.linkedin.com/company/webscience-cz/ · Facebook https://www.facebook.com/websciencecz/ · Instagram https://www.instagram.com/webscience_cz/ · YouTube https://www.youtube.com/@webscience_cz
+- Obchodní podmínky: https://www.webscience.cz/docs/obchodni_podminky.pdf · Code of Conduct: https://www.webscience.cz/docs/coc.pdf
