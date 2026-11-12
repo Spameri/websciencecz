@@ -26,7 +26,7 @@
     }
 
     // Gallery lightbox
-    var links = Array.prototype.slice.call(document.querySelectorAll('.gallery a'));
+    var links = Array.prototype.slice.call(document.querySelectorAll('.gallery a, .timeline a.shot'));
     var box = document.getElementById('lightbox');
     if (box && links.length && typeof box.showModal === 'function') {
         var img = box.querySelector('img');
