@@ -1,55 +1,55 @@
-//iframe lightbox
+(function () {
+    var header = document.querySelector('.site-header');
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('nav');
+    var toTop = document.getElementById('to-top');
 
-[].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function(el) {
-    el.lightbox = new IframeLightbox(el);
-});
+    function onScroll() {
+        var y = window.pageYOffset || document.documentElement.scrollTop;
+        header.classList.toggle('is-scrolled', y > 10);
+        toTop.classList.toggle('show', y > 700);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-//menu
+    if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        nav.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
-let menuBtn = document.querySelector(".navbar-toggler");
-let menuSapce = document.getElementById("collapse_target");
-
-document.querySelectorAll(".nav-link").forEach(item => {
-    item.addEventListener("click", () => {
-        if (window.innerWidth <= 767) {
-            menuBtn.classList.add("collapsed");
-            menuBtn.setAttribute("aria-expanded", "false");
-            menuSapce.classList.remove("show");
+    // Gallery lightbox
+    var links = Array.prototype.slice.call(document.querySelectorAll('.gallery a'));
+    var box = document.getElementById('lightbox');
+    if (box && links.length && typeof box.showModal === 'function') {
+        var img = box.querySelector('img');
+        var idx = 0;
+        function show(i) {
+            idx = (i + links.length) % links.length;
+            img.src = links[idx].getAttribute('href');
+            img.alt = links[idx].querySelector('img').alt || '';
         }
-    });
-});
-
-
-//Sticky navbar & To top arrow
-let arrowToTop = document.getElementById("to-top");
-let navbar = document.getElementById("menu-space");
-let welcome = document.getElementById("welcome");
-let welcomeTop = welcome.offsetTop;
-let welcomeHeight = welcome.offsetHeight;
-let sticky = welcomeTop + welcomeHeight;
-
-window.addEventListener("resize", () => {
-    welcomeTop = welcome.offsetTop;
-    welcomeHeight = welcome.offsetHeight;
-    sticky = welcomeTop + welcomeHeight;
-});
-
-window.addEventListener("load", () => {
-    welcomeTop = welcome.offsetTop;
-    welcomeHeight = welcome.offsetHeight;
-    sticky = welcomeTop + welcomeHeight;
-});
-
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
+        links.forEach(function (a, i) {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                show(i);
+                box.showModal();
+            });
+        });
+        box.querySelector('.lightbox-close').addEventListener('click', function () { box.close(); });
+        box.querySelector('.prev').addEventListener('click', function () { show(idx - 1); });
+        box.querySelector('.next').addEventListener('click', function () { show(idx + 1); });
+        box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+        box.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft') show(idx - 1);
+            if (e.key === 'ArrowRight') show(idx + 1);
+        });
     }
-
-    if (window.pageYOffset > (welcomeTop + welcomeHeight + 70)) {
-        arrowToTop.classList.remove("hidden");
-    } else {
-        arrowToTop.classList.add("hidden");
-    }
-});
+})();
